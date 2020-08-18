@@ -17,7 +17,7 @@ html, body {
 .wrapper-menu {
 	width: 88%;
 	margin: 0 auto;
-	padding: 32px 0px 8px 0px;
+	padding: 32px 0 8px 0;
 	display: flex;
 	align-items: center;
 }
@@ -86,7 +86,7 @@ html, body {
 	transition: 0.5s;
 }
 .authorization__link_mod {
-	margin-right: 55px
+	margin-right: 55px;
 }
 .authorization__link_mod:after {
 	content: "1";
@@ -117,7 +117,7 @@ html, body {
 	}
 	.wrapper-menu {
 		width: 91%;
-		padding: 30px 0px 10px 0px;
+		padding: 30px 0 10px 0;
 	}
 	.logo {
 		margin-right: 31px;
@@ -199,7 +199,7 @@ html, body {
 	.wrapper-menu {
 		width: 75%;
 		margin: 0 47px 0 48px;
-		padding: 22px 0px 8px 0px;
+		padding: 22px 0 8px 0;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -240,12 +240,12 @@ html, body {
 	.wrapper-menu {
 		width: 88%;
 		margin: 0 20px;
-		padding: 22px 0px 8px 0px;
+		padding: 22px 0 8px 0;
 	}
 }
 
 			/* Section 1 */
-			
+
 .section-products {
 	width: 1170px;
 	margin: 0 auto;
@@ -271,6 +271,7 @@ html, body {
 .ad__link {
 	color: #fff;
 	font-size: 12px;
+	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: 0 53px 0 59px;
@@ -319,7 +320,13 @@ html, body {
 	display: none;
 }
 .sneakers__photo {
-	padding-left: 11px
+	padding-left: 11px;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+.sneakers__photo:hover {
+	transform: scale(1.5);
+	border: 1px solid #c4c4c4;
 }
 .sneakers__name {
 	padding-top: 11px;
@@ -380,6 +387,7 @@ html, body {
 @media screen and (max-width: 1023px) {
 	.section-products {
 		width: 1024px;
+		margin-bottom: 45px;
 	}
 	.ad {
 		width: 91%;
@@ -397,7 +405,6 @@ html, body {
 	}
 	.products {
 		width: 91%;
-
 	}
 	.wrapper-sneakers {
 		width: 100%;
@@ -410,7 +417,7 @@ html, body {
 	.sneakers:after {
 		height: 102px;
     top: 41px;
-    right: -10px;
+    right: 15px;
 	}
 	.sneakers__photo {
 		width: 173px;
@@ -431,7 +438,7 @@ html, body {
 @media screen and (max-width: 767px) {
 	.section-products {
 		width: 767px;
-		margin-bottom: 1px;
+		margin-bottom: 81px;
 	}
 	.ad {
 		width: 100%;
@@ -464,9 +471,6 @@ html, body {
 		font-size: 30px;
 		padding-right: 15px;
 	}
-	.wrapper-sneakers {
-		margin-bottom: 100px;
-	}
 	.sneakers {
 		padding: 11px 0 0 0;
 		width: auto;
@@ -481,7 +485,11 @@ html, body {
 	.sneakers__photo {
 		width: 231px;
     height: 219px;
-    padding: 0px 0 0 17px;
+    padding: 0 0 0 17px;
+	}
+	.sneakers__photo:hover {
+		transform: none;
+		border: none;
 	}
 	.sneakers__name {
 		font-size: 20px;
@@ -494,7 +502,7 @@ html, body {
 	.prise-circles {
 		width: auto;
 		margin: 0 -9px 0 0;
-		padding: 5px 0 0 0px;
+		padding: 5px 0 0 0;
 	}
 	.circle {
 		width: 20px;
@@ -506,6 +514,7 @@ html, body {
 @media screen and (max-width: 374px) {
 	.section-products {
 		width: 374px;
+		margin-bottom: 89px;
 	}
 	.ad {
 		width: 100%;
@@ -535,7 +544,7 @@ html, body {
 		margin-bottom: 0;
 	}
 	.sneakers {
-		padding: 0px 0 0 9px;
+		padding: 0 0 0 9px;
 		width: auto;
 		height: auto;
 	}
@@ -543,12 +552,12 @@ html, body {
 		display: none;
 	}
 	.sneakers_margin {
-		margin: 0 0px 0 50px;
+		margin: 0 0 0 50px;
 	}
 	.sneakers__photo {
 		width: 164px;
     height: 153px;
-    padding: 0 0 0px 49px;
+    padding: 0 0 0 49px;
 	}
 	.sneakers__name {
 		font-size: 15px;
@@ -557,7 +566,7 @@ html, body {
 	}
 	.prise__text {
 		font-size: 20px;
-		padding: 0px 0 0 4px;
+		padding: 0 0 0 4px;
 	}
 	.prise-circles {
 		margin: 0 -57px 0 0;
@@ -586,10 +595,10 @@ html, body {
 		padding: 0 54px 0 20px;
 	}
 	.sneakers_margin {
-		margin: 0 0px 0 23px;
+		margin: 0 0 0 23px;
 	}
 	.prise__text {
-		padding: 0px 0 0 3px;
+		padding: 0 0 0 3px;
 	}
 	.prise-circles {
 		margin: 0 -56px 0 0;
