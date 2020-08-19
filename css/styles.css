@@ -25,7 +25,7 @@ html, body {
 	margin-right: 45px;
 	width: 55px;
 	height: 55px;
-	background: url(../img/logo/logo.svg) no-repeat;
+	background: url(../images/logo/logo.svg) no-repeat;
 }
 .nav {
 	margin-right: 164px;
@@ -69,7 +69,7 @@ html, body {
 	top: 0;
 	right: 0;
 	cursor: pointer;
-	background: url("../img/logo/search.svg");
+	background: url("../images/logo/search.svg");
 }
 .authorization {
 	display: flex;
@@ -167,7 +167,7 @@ html, body {
 		margin-right: 45px;
 		width: 156px;
 		height: 34px;
-		background: url(../img/logo/logo2.svg);
+		background: url(../images/logo/logo2.svg);
 	}
 	.burger {
 		display: block;
@@ -207,7 +207,7 @@ html, body {
 		margin-right: 45px;
 		width: 104px;
 		height: 22px;
-		background: url(../img/logo/logo2.svg) no-repeat;
+		background: url(../images/logo/logo2.svg) no-repeat;
 		background-size: cover;
 	}
 	.burger {
@@ -254,7 +254,7 @@ html, body {
 	width: 88%;
 	margin: 0 auto;
 	height: 280px;
-	background: url("../img/section1/ad/main.png") no-repeat;
+	background: url("../images/section1/ad/main.png") no-repeat;
 	background-size: inherit;
 	margin-bottom: 51px;
 }
@@ -284,7 +284,7 @@ html, body {
 	right: 0;
 	width: 46px;
 	height: 10px;
-	background: url("../img/logo/arrow-w.svg") no-repeat;
+	background: url("../images/logo/arrow-w.svg") no-repeat;
 }
 .products {
 	width: 88%;
@@ -443,7 +443,7 @@ html, body {
 	.ad {
 		width: 100%;
 		height: 415px;
-		background: url("../img/section1/ad/main767.svg") no-repeat;
+		background: url("../images/section1/ad/main767.svg") no-repeat;
 	}
 	.ad__title {
 		font-size: 50px;
@@ -519,7 +519,7 @@ html, body {
 	.ad {
 		width: 100%;
 		height: 191px;
-		background: url("../img/section1/ad/main374.svg") no-repeat;
+		background: url("../images/section1/ad/main374.svg") no-repeat;
 		background-size: cover;
 		margin-bottom: 36px;
 	}
@@ -585,7 +585,7 @@ html, body {
 	.ad {
 		width: 100%;
 		height: 191px;
-		background: url("../img/section1/ad/main374.svg") center no-repeat;
+		background: url("../images/section1/ad/main374.svg") center no-repeat;
 		background-size: cover;
 	}
 	.ad__title {
