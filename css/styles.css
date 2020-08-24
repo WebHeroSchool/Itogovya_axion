@@ -50,24 +50,22 @@ html, body {
 	position: relative;
 	display: flex;
 	margin-right: 36px;
-	padding-bottom: 11px;
+	padding: 8px 0 0 0;
 }
 .form__field {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	border: none;
 	border-bottom: 1px solid #000;
 	outline: none;
-	top: 0;
-	right: 0;
 }
 .form__btn {
 	border: none;
 	position: absolute;
 	height: 14px;
 	width: 14px;
-	top: 0;
-	right: 0;
+	top: 7px;
+	right: -3px;
 	cursor: pointer;
 	background: url("../images/logo/search.svg");
 }
@@ -294,7 +292,7 @@ html, body {
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 22px;
-	margin-bottom: 16px;
+	margin: 0 0 16px 0;
 }
 .wrapper-sneakers {
 	display: flex;
