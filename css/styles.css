@@ -149,7 +149,6 @@ body {
   .form {
     width: 156px;
     margin-right: 32px;
-    padding-bottom: 13px;
   }
   
   .authorization__link {
@@ -198,7 +197,7 @@ body {
   .burger {
     display: block;
     position: relative;
-    width: 62px;
+    width: 63px;
     height: 25px;
   }
   
