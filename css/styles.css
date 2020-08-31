@@ -8,31 +8,41 @@ body {
   box-sizing: border-box;
 }
 
+.link {
+	transition: color 0.5s;
+}
+
+.link:hover, .link:focus {
+	color: #eb1d02;
+}
+
 /* Header */
 .header {
-  width: 1170px;
+  max-width: 1030px;
   margin: 0 auto;
   margin-bottom: 20px;
+  padding: 0 47px 0 47px;
 }
 
 .wrapper-menu {
-  width: 88%;
+  /* width: 88%; */
   margin: 0 auto;
   padding: 32px 0 8px 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  margin-right: 45px;
   width: 55px;
   height: 55px;
   background: url(../images/logo/logo.svg) no-repeat;
 }
 
 .nav {
-  margin-right: 164px;
   padding-bottom: 2px;
+  padding-left: 45px;
+  flex: 1;
 }
 
 .nav__link {
@@ -53,10 +63,9 @@ body {
 }
 
 .form {
-  width: 173px;
+  width: 178px;
   position: relative;
   display: flex;
-  margin-right: 36px;
   padding: 8px 0 0 0;
 }
 
@@ -66,6 +75,7 @@ body {
   border: none;
   border-bottom: 1px solid #000;
   outline: none;
+  padding-right: 20px;
 }
 
 .form__btn {
@@ -73,8 +83,8 @@ body {
   position: absolute;
   height: 14px;
   width: 14px;
-  top: 7px;
-  right: -3px;
+  top: 6px;
+  right: 1px;
   cursor: pointer;
   background: url("../images/logo/search.svg");
 }
@@ -82,10 +92,11 @@ body {
 .authorization {
   display: flex;
   align-items: center;
+  padding-left: 35px;
 }
 
 .authorization__link {
-  margin-right: 35px;
+  margin-right: 34px;
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
@@ -96,7 +107,8 @@ body {
 }
 
 .authorization__link_mod {
-  margin-right: 55px;
+  margin-right: 36px;
+  padding-right: 20px;
 }
 
 .authorization__link_mod::after {
@@ -106,10 +118,10 @@ body {
   position: absolute;
   justify-content: center;
   font-size: 10px;
-  left: 40px;
+  right: 0;
   top: 0;
   height: 15px;
-  width: 13px;
+  width: 14px;
   background: #000;
   color: #fff;
   border-radius: 50%;
@@ -125,84 +137,75 @@ body {
 
 @media screen and (max-width: 1024px) {
   .header {
-    width: 1024px;
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
-  
-  .wrapper-menu {
-    width: 91%;
-    padding: 30px 0 10px 0;
-  }
-  
+
   .logo {
-    margin-right: 31px;
-    width: 60px;
-    height: 59px;
-    background-size: cover;
+    width: 61px;
+    height: 61px;
+    background-size: 61px;
+    position: relative;
+    top: -3px;
   }
-  
+
   .nav {
-    margin-right: 114px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    padding-left: 29px;
   }
-  
+
   .form {
-    width: 156px;
-    margin-right: 32px;
+    padding: 8px 0;
+    width: 162px;
   }
-  
+
+  .authorization {
+    padding-bottom: 8px;
+    padding-left: 31px;
+  }
+
   .authorization__link {
     margin-right: 27px;
-    padding-bottom: 2px;
   }
-  
+
   .authorization__link_mod {
-    margin-right: 46px;
+    margin-right: 24px;
   }
-  
+
   .authorization__logo {
     height: 19px;
-    width: 18px;
-    padding-bottom: 3px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
   .header {
-    width: 768px;
-    margin-bottom: 38px;
+    padding: 0 43px 0 43px;
+    margin-bottom: 0;
   }
-  
-  .nav,
-  .form,
-  .authorization {
-    display: none;
-  }
-  
+
   .wrapper-menu {
-    width: 89%;
-    margin: 0 44px 0 43px;
-    display: flex;
-    justify-content: space-between;
-    padding: 41px 0 0 0;
+    padding: 40px 0 40px 0;
   }
-  
+
   .logo {
-    margin-right: 45px;
+    margin-right: 0px;
     width: 156px;
     height: 34px;
     background: url(../images/logo/logo2.svg);
+    top: 1px;
   }
-  
+
+  .nav, .form, .authorization {
+    display: none;
+  }
+
   .burger {
     display: block;
     position: relative;
     width: 63px;
     height: 25px;
   }
-  
-  .burger::before,
-  .burger::after {
+
+  .burger::before, .burger::after {
     content: "";
     background-color: #000;
     position: absolute;
@@ -210,11 +213,11 @@ body {
     height: 9px;
     right: 0;
   }
-  
+
   .burger::before {
     top: 1px;
   }
-  
+
   .burger::after {
     bottom: -2px;
   }
@@ -222,78 +225,59 @@ body {
 
 @media screen and (max-width: 375px) {
   .header {
-    width: 375px;
-    margin-bottom: 16px;
+    padding: 0 48px 6px;
   }
-  
+
   .wrapper-menu {
-    width: 75%;
-    margin: 0 47px 0 48px;
-    padding: 22px 0 8px 0;
-    display: flex;
-    justify-content: space-between;
+    padding: 21px 0 19px 0;
   }
-  
+
   .logo {
-    margin-right: 45px;
+    margin-right: 0;
     width: 104px;
     height: 22px;
     background: url(../images/logo/logo2.svg) no-repeat;
     background-size: cover;
+    top: 1px;
   }
-  
+
   .burger {
     display: block;
     position: relative;
-    width: 42px;
+    width: 41px;
     height: 25px;
+    top: 1px;
   }
-  
-  .burger::before,
-  .burger::after {
-    content: "";
-    background-color: #000;
-    position: absolute;
-    width: 100%;
-    height: 6px;
-    right: 0;
-  }
-  
+
   .burger::before {
     top: 5px;
+    height: 5px;
   }
-  
+
   .burger::after {
     bottom: 3px;
+    height: 6px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .header {
-    width: 320px;
-    margin-bottom: 16px;
-  }
-  
-  .wrapper-menu {
-    width: 88%;
-    margin: 0 20px;
-    padding: 22px 0 8px 0;
+    padding: 0 20px 6px;
   }
 }
 
   /* Section 1 */
 .section-products {
-  width: 1170px;
+  max-width: 1030px;
+  padding: 0 47px;
   margin: 0 auto;
 }
 
 .ad {
-  width: 88%;
-  margin: 0 auto;
   height: 280px;
   background: url("../images/section1/ad/main.png") no-repeat;
   background-size: inherit;
-  margin-bottom: 51px;
+  margin-bottom: 50px;
 }
 
 .ad__title {
@@ -325,11 +309,12 @@ body {
   width: 46px;
   height: 10px;
   background: url("../images/logo/arrow-w.svg") no-repeat;
+  transition: background 0.5s;
 }
 
-.products {
-  width: 88%;
-  margin: 0 auto;
+.ad__link:hover:after,
+.ad__link:focus:after {
+	background: url("../images/logo/arrow-w-red.svg") no-repeat;
 }
 
 .products__title {
@@ -448,151 +433,152 @@ body {
 
 @media screen and (max-width: 1024px) {
   .section-products {
-    width: 1024px;
     margin-bottom: 45px;
   }
-  
+
   .ad {
-    width: 91%;
     height: 252px;
     background-position: center;
     background-size: cover;
     margin-bottom: 63px;
   }
-  
+
   .ad__title {
     padding: 75px 0 0 55px;
     margin-bottom: 8px;
   }
-  
+
   .ad__link {
     padding: 0 59px 0 55px;
   }
-  
-  .products {
-    width: 91%;
-  }
-  
+
   .wrapper-sneakers {
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
   }
-  
+
   .sneakers {
     padding: 7px 48px 0 9px;
   }
-  
+
   .sneakers::after {
     height: 102px;
     top: 41px;
     right: 15px;
   }
-  
+
   .sneakers__photo {
     width: 173px;
     height: 161px;
   }
-  
+
   .sneakers__name {
     padding: 18px 0 0 2px;
   }
-  
+
   .prise__text {
     padding: 0 0 0 3px;
   }
-  
+
   .prise-circles {
     width: 50px;
     margin-right: -5px;
   }
 }
 
+@media screen and (max-width: 1010px) {
+  .sneakers:nth-child(3)::after {
+    display: none;
+  }
+
+  .sneakers:last-child {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .section-products {
-    width: 768px;
     margin-bottom: 81px;
+    padding: 0;
   }
-  
+
   .ad {
-    width: 100%;
     height: 415px;
     background: url("../images/section1/ad/main767.svg") no-repeat;
   }
-  
+
   .ad__title {
     font-size: 50px;
     padding: 121px 0 0 45px;
     margin-bottom: 45px;
     line-height: 48px;
   }
-  
+
   .ad__link {
     font-size: 20px;
     padding: 0 84px 0 44px;
   }
-  
+
   .ad__link::after {
     width: 76px;
     height: 14px;
     background-size: 100%;
     top: 6px;
   }
-  
-  .products {
-    width: 100%;
-  }
-  
+
   .sneakers_display-none {
     display: none;
   }
-  
+
   .products__title {
     font-size: 30px;
     padding-right: 15px;
   }
-  
+
+  .wrapper-sneakers {
+    justify-content: center;
+  }
+
   .sneakers {
     padding: 11px 0 0 0;
     width: auto;
     height: auto;
   }
-  
+
   .sneakers::after {
     display: none;
   }
-  
+
   .sneakers_margin {
-    margin: 0 97px 0 81px;
+    margin-right: 100px;
   }
-  
+
   .sneakers__photo {
     width: 231px;
     height: 219px;
     padding: 0 0 0 17px;
   }
-  
+
   .sneakers__photo:hover {
     transform: none;
     border: none;
   }
-  
+
   .sneakers__name {
     font-size: 20px;
     padding: 6px 0 0 4px;
   }
-  
+
   .prise__text {
     font-size: 25px;
     padding: 7px 0 0 4px;
   }
-  
+
   .prise-circles {
     width: auto;
     margin: 0 -9px 0 0;
     padding: 5px 0 0 0;
   }
-  
+
   .circle {
     width: 20px;
     height: 20px;
@@ -600,79 +586,83 @@ body {
   }
 }
 
+@media screen and (max-width: 625px) {
+  .sneakers:nth-child(2) {
+    display: none;
+  }
+
+  .sneakers_margin {
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .section-products {
-    width: 375px;
     margin-bottom: 89px;
   }
-  
+
   .ad {
-    width: 100%;
     height: 191px;
     background: url("../images/section1/ad/main374.svg") no-repeat;
     background-size: cover;
     margin-bottom: 36px;
   }
-  
+
   .ad__title {
     font-size: 20px;
     padding: 66px 0 0 48px;
     margin-bottom: 16px;
     line-height: 19.5px;
   }
-  
+
   .ad__link {
     font-size: 12px;
     padding: 0 54px 0 48px;
   }
-  
+
   .ad__link::after {
     width: 48px;
     height: 14px;
     top: 3px;
   }
-  
+
   .products__title {
     font-size: 20px;
     padding-right: 9px;
     margin-bottom: 0;
   }
-  
+
   .sneakers {
-    padding: 0 0 0 9px;
+    padding: 0 44px 0 0;
     width: auto;
     height: auto;
   }
-  
+
   .sneakers_disp-none {
     display: none;
   }
-  
-  .sneakers_margin {
-    margin: 0 0 0 50px;
-  }
-  
+
   .sneakers__photo {
     width: 164px;
     height: 153px;
     padding: 0 0 0 49px;
   }
-  
+
   .sneakers__name {
     font-size: 15px;
     padding: 7px 0 0 3px;
     margin-bottom: 3px;
   }
-  
+
   .prise__text {
     font-size: 20px;
     padding: 0 0 0 4px;
   }
-  
+
   .prise-circles {
     margin: 0 -57px 0 0;
   }
-  
+
   .circle {
     width: 15px;
     height: 15px;
@@ -681,33 +671,25 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-  .section-products {
-    width: 320px;
-  }
-  
+
   .ad {
-    width: 100%;
     height: 191px;
     background: url("../images/section1/ad/main374.svg") center no-repeat;
     background-size: cover;
   }
-  
+
   .ad__title {
     padding: 66px 0 0 20px;
   }
-  
+
   .ad__link {
     padding: 0 54px 0 20px;
   }
-  
-  .sneakers_margin {
-    margin: 0 0 0 23px;
-  }
-  
+
   .prise__text {
     padding: 0 0 0 3px;
   }
-  
+
   .prise-circles {
     margin: 0 -56px 0 0;
   }
