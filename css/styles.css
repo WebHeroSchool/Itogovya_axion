@@ -1298,3 +1298,82 @@ body {
     padding: 12px 26px 0 0;
   }
 }
+
+/* Footer */
+.footer {
+  max-width: 1030px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #000;
+  font-size: 12px;
+  padding: 0 47px;
+}
+
+.footer-top {
+  display: flex;
+  padding: 67px 0 37px 130px;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box_account {
+  margin: 0 114px 0 0;
+}
+
+.footer-box_service {
+  margin: 0 72px 0 0;
+}
+
+.footer-box_miscellaneous {
+  margin: 0 85px 0 0;
+}
+
+.footer-box__text {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+.footer-box__link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0 5px 0;
+}
+
+.footer-box__btn {
+  width: 136px;
+  height: 30px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 0 35px 0;
+}
+
+.footer-box__btn:hover, .footer-box__btn:focus {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  border-color: #000;
+}
+
+.footer-box__btn:active {
+  background-color: red;
+}
+
+.footer-icons__unit {
+  margin: 0 22px 0 0;
+}
+
+.footer-bottom {
+  padding: 0 0 33px 0;
+}
+
+.footer-bottom__text {
+  text-align: center;
+}
