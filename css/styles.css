@@ -1436,8 +1436,7 @@ body {
     margin-bottom: 3px;
   }
 
-  .footer-box:last-child
-  .footer-box__link {
+  .footer-box:last-child .footer-box__link {
     margin-bottom: 13px;
     width: 155px;
     letter-spacing: 1px;
