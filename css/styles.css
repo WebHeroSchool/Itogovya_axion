@@ -820,11 +820,11 @@ body {
   .info-content__link {
     font-size: 12px;
     width: 145px;
-	}
+  }
 
   .info-content__link:after {
     top: 4px;
-	}
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -840,7 +840,7 @@ body {
     padding: 0;
   }
 
-	.info-wrapper {
+  .info-wrapper {
     height: auto;
     flex-direction: column-reverse;
     padding: 56px 0 0 0;
@@ -919,14 +919,14 @@ body {
     height: 159px;
   }
 
-	.info-content__title {
+  .info-content__title {
     max-width: 349px;
     font-size: 20px;
     padding: 0 0 0 10px;
     margin: 0 0 16px 0;
   }
 
-	.info-content__wrap-title {
+  .info-content__wrap-title {
     display: block;
     padding: 0 0 0 6px;
     margin: -2px 0 0 0;
