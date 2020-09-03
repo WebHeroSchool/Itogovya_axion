@@ -1437,13 +1437,11 @@ body {
     margin: 0 0 5px 0;
   }
 
-  .footer-box:last-child
-  .footer-box__text {
+  .footer-box:last-child .footer-box__text {
     margin-bottom: 3px;
   }
 
-  .footer-box:last-child
-  .footer-box__link {
+  .footer-box:last-child .footer-box__link {
     margin-bottom: 13px;
     width: 155px;
     letter-spacing: 1px;
